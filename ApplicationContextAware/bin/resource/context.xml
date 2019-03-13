@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<bean id="triangle" class="com.xworkz.spring.beans.Triangle">
+	<property name="pointA" ref="ponitA"></property>
+	<property name="pointB" ref="ponitB"></property>
+	<property name="pointC" ref="ponitC"></property>
+	<property name="pointD" ref="ponitD"></property>
+	
+	</bean>
+	
+	<bean id="ponitA" class="com.xworkz.spring.beans.Point">
+	<property name="x" value="1"></property>
+	<property name="y" value="1"></property>
+	</bean>
+	
+	<bean id="ponitB" class="com.xworkz.spring.beans.Point">
+	<property name="x" value="10"></property>
+	<property name="y" value="12"></property>
+	</bean>
+	
+	<bean id="ponitC" class="com.xworkz.spring.beans.Point">
+	<property name="x" value="15"></property>
+	<property name="y" value="13"></property>
+	</bean>
+	
+	<bean id="ponitD" class="com.xworkz.spring.beans.Point">
+	<property name="x" value="18"></property>
+	<property name="y" value="16"></property>
+	</bean>
+	</beans>
